@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Imersão Dev Alura - Aula 01</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="https://alura.com.br/" target="_blank"><img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="Logo da Alura" class="alura-logo"></a>
+		<h1 class="page-title">Calculadora de média</h1>
+		<p class="page-subtitle">Descubra qual a sua média de nota de todas as provas!<br>Você pode calcular sua média anual em trimestres apenas inserindo os valores.</p>
+		<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="Logo da Imersão DEV">
+	</header>
+
+		<form>
+			<fieldset>
+				<label for="primeira-nota">Nota do primeiro trimestre:</label><input type="number" id="primeira-nota" placeholder="ex.: 7.6" step="0.1" min="0" max="10.0" value="">
+				<label for="segunda-nota">Nota do segundo trimestre:</label><input type="number" id="segunda-nota" placeholder="ex.: 6.0" step="0.1" min="0" max="10.0" value="">
+				<label for="terceira-nota">Nota do terceiro trimestre:</label><input type="number" id="terceira-nota" placeholder="ex.: 7.1" step="0.1" min="0" max="10.0" value="">
+			</fieldset>
+	
+			<p id="botao-calc" onclick="calcula()">Calcular</p>
+
+			<div id="resultado"></div>
+		</form>
+
+</body>
+
+<script src="desafio01.js"></script>
+</html>
